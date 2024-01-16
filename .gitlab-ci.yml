@@ -1,0 +1,7 @@
+test:
+  image: renovate/renovate:37.131.0-slim
+  services:
+    - name: docker:24.0.6-dind
+      alias: docker
+  script:
+    - bash scripts/run-renovate.sh
